@@ -8,19 +8,13 @@ function ensureException(error) {
 }
 
 async function expectFailure(call) {
-	let tx;
 	try {
-		tx = await call;
+		await call;
 	} catch (error) {
-		// Assert ganache revert exception
-		assert.equal(
-			error.message,
-			'Returned error: VM Exception while processing transaction: revert'
-		);
+	    ensureException(error)
 	}
-	if(tx !== undefined) {
-		assert.equal(parseInt(tx.receipt.status), 0);
-	}
+
+	assert.fail("should fail")
 }
 
 module.exports = {
