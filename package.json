@@ -1,6 +1,6 @@
 {
     "name": "@ensdomains/test-utils",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Test Utilities for ENS truffle tests",
     "main": "utils.js",
     "dependencies": {
