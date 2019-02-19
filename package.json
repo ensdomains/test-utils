@@ -4,6 +4,7 @@
     "description": "Test Utilities for ENS truffle tests",
     "main": "utils.js",
     "dependencies": {
-        "bluebird": "^3.5.2"
+        "bluebird": "^3.5.2",
+        "dns-packet": "^5.0.4"
     }
 }
