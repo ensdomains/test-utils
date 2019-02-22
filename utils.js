@@ -1,5 +1,5 @@
 module.exports = {
-    exception: require('./src/exception'),
+    exceptions: require('./src/exceptions'),
     evm: require('./src/evm'),
     dns: require('./src/dns')
 }
