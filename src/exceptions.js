@@ -8,13 +8,13 @@ function ensureException(error) {
 }
 
 async function expectFailure(call) {
-	try {
-		await call;
-	} catch (error) {
-	    ensureException(error)
-	}
+    try {
+        await call;
+    } catch (error) {
+        return ensureException(error)
+    }
 
-	assert.fail("should fail")
+    assert.fail("should fail")
 }
 
 module.exports = {
